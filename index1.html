@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahul Kumar Bala | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'DM Sans',sans-serif;
+background:#0B1120;
+color:#E2E8F0;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+left:0;
+right:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 6%;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+z-index:100;
+}
+
+nav .logo{
+font-weight:700;
+font-size:20px;
+color:white;
+}
+
+nav a{
+color:#94A3B8;
+text-decoration:none;
+margin-left:20px;
+font-size:14px;
+}
+
+nav a:hover{
+color:#38BDF8;
+}
+
+/* HERO */
+
+#hero{
+height:100vh;
+display:flex;
+align-items:center;
+padding:0 6%;
+}
+
+.hero-name{
+font-size:58px;
+font-weight:700;
+line-height:1.1;
+}
+
+.hero-name span{
+color:#38BDF8;
+}
+
+.hero-desc{
+margin-top:15px;
+color:#94A3B8;
+max-width:520px;
+line-height:1.6;
+}
+
+/* STATS */
+
+.hero-stats{
+display:flex;
+gap:40px;
+margin-top:30px;
+}
+
+.hstat-val{
+font-size:30px;
+color:#38BDF8;
+font-weight:700;
+}
+
+.hstat-lbl{
+font-size:12px;
+color:#94A3B8;
+letter-spacing:1px;
+}
+
+/* SKILLS AIRSPACE */
+
+.skills-airspace{
+position:relative;
+height:120px;
+margin-top:50px;
+overflow:hidden;
+}
+
+.skill-flight{
+position:absolute;
+font-size:20px;
+font-family:'JetBrains Mono';
+color:#38BDF8;
+white-space:nowrap;
+animation:fly 20s linear infinite;
+}
+
+.skill-flight:nth-child(1){
+top:10px;
+animation-delay:0s;
+}
+
+.skill-flight:nth-child(2){
+top:40px;
+animation-delay:5s;
+}
+
+.skill-flight:nth-child(3){
+top:70px;
+animation-delay:10s;
+}
+
+.skill-flight:nth-child(4){
+top:100px;
+animation-delay:15s;
+}
+
+@keyframes fly{
+
+0%{
+transform:translateX(-300px);
+opacity:0;
+}
+
+10%{
+opacity:1;
+}
+
+90%{
+opacity:1;
+}
+
+100%{
+transform:translateX(120vw);
+opacity:0;
+}
+
+}
+
+/* SECTIONS */
+
+section{
+padding:120px 6%;
+}
+
+h2{
+font-size:34px;
+margin-bottom:20px;
+}
+
+/* SKILL GRID */
+
+.skill-list{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+
+.skill-item{
+background:#111827;
+padding:15px;
+border-radius:8px;
+}
+
+/* CONTACT */
+
+.contact p{
+margin:8px 0;
+color:#94A3B8;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:#111827;
+margin-top:50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">RKB</div>
+
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section id="hero">
+
+<div>
+
+<h1 class="hero-name">
+Rahul Kumar <span>Bala</span>
+</h1>
+
+<p class="hero-desc">
+
+B.Tech Computer Science (Data Science) student at Lovely Professional University focused on building software, solving DSA problems and creating data-driven applications.
+
+</p>
+
+<div class="hero-stats">
+
+<div>
+<div class="hstat-val">6.77</div>
+<div class="hstat-lbl">CGPA AT LPU</div>
+</div>
+
+<div>
+<div class="hstat-val">120+</div>
+<div class="hstat-lbl">LEETCODE</div>
+</div>
+
+<div>
+<div class="hstat-val">4+</div>
+<div class="hstat-lbl">CERTIFICATIONS</div>
+</div>
+
+</div>
+
+<div class="skills-airspace">
+
+<div class="skill-flight">
+✈ C++ Python Java SQL
+</div>
+
+<div class="skill-flight">
+✈ HTML CSS JavaScript Responsive Design
+</div>
+
+<div class="skill-flight">
+✈ GitHub MySQL Power BI Excel VS Code
+</div>
+
+<div class="skill-flight">
+✈ Data Structures Sorting Searching Dynamic Programming
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skill-list">
+
+<div class="skill-item">C++</div>
+<div class="skill-item">Python</div>
+<div class="skill-item">JavaScript</div>
+<div class="skill-item">Java</div>
+<div class="skill-item">C</div>
+<div class="skill-item">SQL</div>
+
+<div class="skill-item">HTML5</div>
+<div class="skill-item">CSS3</div>
+<div class="skill-item">Responsive Design</div>
+
+<div class="skill-item">GitHub</div>
+<div class="skill-item">MySQL</div>
+<div class="skill-item">Power BI</div>
+<div class="skill-item">Excel</div>
+<div class="skill-item">VS Code</div>
+
+<div class="skill-item">Sorting</div>
+<div class="skill-item">Searching</div>
+<div class="skill-item">Dynamic Programming</div>
+<div class="skill-item">Data Structures</div>
+
+<div class="skill-item">Excel Dashboards</div>
+<div class="skill-item">Data Analysis</div>
+
+<div class="skill-item">Problem Solving</div>
+<div class="skill-item">Team Player</div>
+<div class="skill-item">Project Management</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<h2>Contact</h2>
+
+<p>Email: rk3531496@gmail.com</p>
+
+<p>GitHub: github.com/Rahulkumar65</p>
+
+</section>
+
+<footer>
+
+© 2026 Rahul Kumar Bala
+
+</footer>
+
+</body>
+</html>
